@@ -20,7 +20,7 @@ choco install nodejs
  - 找到C:\Users\你的用户\.codex\config.toml
  - 备份config.toml
  - 修改当前config.toml:
- - - 编辑内容:
+ - 编辑内容:
 ```bash
 #修改model(API_KEY允许的模型即可)
 model = "gpt-5.5"
@@ -58,7 +58,7 @@ const const TARGET_BASE = "http://本地端口路由/v1";
 ### 4. 开启responses-shim.cjs
 
 ```bash
-# clone项目并启动服务
+# 启动服务
 cd LocalChatAPI_for_Codex
 node responses-shim.cjs 
 ```
@@ -88,5 +88,5 @@ node responses-shim.cjs
 
 ## 常见问题
 
-Q:Codex 报错：Missing environment variable: OPENAI_API_KEY
-A:API_KEY应在原本地API调用中使用，如果codex的config.toml中包含env_key请删除该参数
+ - Q:Codex 报错：Missing environment variable: OPENAI_API_KEY
+ - A:API_KEY应在原本地API调用中使用，如果codex的config.toml中包含env_key请删除该参数
