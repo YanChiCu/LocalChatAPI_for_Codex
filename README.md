@@ -1,8 +1,8 @@
 ## 前言
 
-新版本的Codex客户端默认使用Responses API,由本地端口代理接三方中转API的方式无法被Codex用chat模式识别(wire_api = "responses")。
-该项目提供一个将本地中转端口转发返回的/v1/chat/completions转为/v1/responses供Codex识别调用的JS脚本
-修改.codex/使Codex不再使用OpenAI服务商解析调用API，使用本地解析配置本地API
+ - 新版本的Codex客户端默认使用Responses API,由本地端口代理接三方中转API的方式无法被Codex用chat模式识别(wire_api = "responses")。
+ - 该项目提供一个将本地中转端口转发返回的/v1/chat/completions转为/v1/responses供Codex识别调用的JS脚本
+ - 修改.codex/使Codex不再使用OpenAI服务商解析调用API，使用本地解析配置本地API
 
 ## 快速开始
 
